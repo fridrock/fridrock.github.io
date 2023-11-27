@@ -14,14 +14,17 @@ aside{
 }
 aside > h2{
     color: white;
+    font-size: 2vw;
 }
 aside > ul {
+    margin-top: 0.5vw;
     color:white;
 }
 aside > ul > li{
     margin-left: 1vw;
 }
 aside > ul > li > a{
+    font-size: 1.2vw;
     color: white;
 }
 main{
