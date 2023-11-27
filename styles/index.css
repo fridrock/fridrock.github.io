@@ -1,0 +1,318 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.scrollDisabled{
+    overflow-y:hidden;
+}
+.intro{
+    padding-top:8vw;
+    width: 100%;
+    min-height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-image: url('../img/main.png');
+    background-size: 100% auto;
+    color:rgba(255,255,255,0.8);
+}
+.intro > h1{
+    text-shadow: #FC0 1px 0 10px;
+    font-size: 3vw;
+}
+.slogan{
+    max-width:50vw;
+    text-align: center;
+    margin-top: 2vw;
+    font-size: 2vw;
+    text-shadow: #FC0 1px 0 10px;
+}
+.login{
+    margin-top: 2vw;
+    padding:0.5vw 2vw;
+    border-radius: 2vw;
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(2vw);
+    font-size: 2vw;
+    color:rgba(255,255,255,0.8);
+    text-decoration: none;
+}
+
+/* GOAL */
+.goal{
+    padding:2vw 2vw 7vw 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color:rgba(255,255,255,0.8);
+    width: 100%;
+    background: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
+    border-top-left-radius: 2vw;
+    border-top-right-radius:2vw;
+    margin-top: -2vw; 
+}
+.goalHeading{
+    font-size: 3vw;
+}
+.student{
+    margin-top: 3vw;
+    width: 70vw;
+    border-radius: 2vw;
+    opacity:0.9;
+}
+.goal > h3{
+    margin-top: 3vw;
+    font-size: 2.6vw;
+}
+.goal > ul{
+    list-style:none;
+}
+.goal > ul > li{
+    position: relative;
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+.goal > ul > li::before{
+    content:'';
+    position: absolute;
+    top:50%;
+    margin-top: -0.3vw;
+    left: -1vw;
+    width: 0.6vw;
+    height: 0.6vw;
+    background-color: purple;
+    border-radius: 50%;
+}
+
+/* ABOUT UNIVERSITY */
+.aboutUniversity{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-image: url('../img/main.png');
+    background-size: 100% auto;
+    border-top-left-radius: 2vw;
+    border-top-right-radius:2vw;
+    margin-top: -3vw;
+    color:rgba(255,255,255,0.8);
+    padding:2vw 2vw 7vw 2vw;
+}
+.universityReview.closed{
+    display: none;
+}
+.universityReview{
+    cursor: pointer;
+    z-index: 2;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.universityReview iframe{
+    width: 70vw;
+    height: 40vw;
+}
+.aboutUniversity > h2{
+    text-shadow: #FC0 1px 0 10px;
+    font-size: 3vw;
+}
+.aboutUniversity > p{
+    margin-top: 3vw;
+    max-width: 60vw;
+    text-align: center;
+    font-size: 2.5vw;
+    text-shadow: #FC0 1px 0 10px;
+}
+.universityContent{
+    width: 90vw;
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter:blur(2vw);
+    padding:2vw 3vw;
+    border-radius: 2vw;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.universityPicture{
+    border-radius: 2vw;
+    opacity: 0.7;
+    width: 50%;
+}
+.rightSide{
+    width: 50%;
+    margin-left: 1vw;
+}
+.universityDescription{
+    font-size: 2vw;
+}
+.watchReview{
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(2vw);
+    padding:0.5vw 4vw;
+    border-radius: 2vw;
+    font-size: 2.5vw;
+    margin-top: 3vw;
+}
+
+/* COURSES */
+.courses{
+    padding:2vw 2vw 7vw 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color:rgba(255,255,255,0.8);
+    width: 100%;
+    background: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
+    border-top-left-radius: 2vw;
+    border-top-right-radius:2vw;
+    margin-top: -2vw; 
+}
+.courses > h2{
+    font-size: 3vw;
+}
+ .coursesContainer{
+    margin-top: 2vw;
+    display: grid;
+    gap:1vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+}
+
+.watchCourse{
+    margin-top: auto;
+    width: 100%;
+    border-radius: 2vw;
+    background-color: rgba(255,255,255,0.3);
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+    text-align: center;
+
+}
+.courseHeading{
+    font-size: 2vw;
+    text-align: center;
+}
+.courseDescription{
+    text-align: center;
+    font-size: 1.2vw;
+    margin-bottom: 2vw;
+} 
+:root{
+    --cardContainerWidth:27vw;
+    --cardContainerHeight:calc(var(--cardContainerWidth)*1.9);
+    --cardContentPseudoSize:calc(var(--cardContainerWidth)*0.18);
+    --cardContentPseudoVerticalPosition:calc((var(--cardContainerHeight) - var(--cardContainerHeight)*0.6)/2);
+}
+.cards{
+    padding:2vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--cardContainerWidth);
+    height: var(--cardContainerHeight);
+}
+.cardContent{
+    width: 100%;
+    height: calc(var(--cardContainerHeight)*0.6);
+    padding:2vw 2vw;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter:blur(2em);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 2vw;
+    z-index: 2;
+    align-items: center;
+}
+.cardContent::before, .cardContent::after{
+    content:'';
+    position: absolute;
+    width:var(--cardContentPseudoSize);
+    height:var(--cardContentPseudoSize);
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter:blur(2em);
+    animation-name:animateBlock;
+    animation-iteration-count:infinite;
+    animation-duration:5s;
+    animation-timing-function:ease-in-out;
+    border-radius: 10%;
+    animation-play-state: paused;
+    opacity:0;
+    transition:opacity 0.5s ease-in-out;
+}
+.cardContent::before{
+    top:calc(var(--cardContentPseudoVerticalPosition)*(-1));
+    left:0;
+    animation-direction: alternate;
+}
+.cardContent::after{
+    bottom:calc(var(--cardContentPseudoVerticalPosition)*(-1));
+    left:22vw;
+    animation-direction: alternate-reverse;
+}
+.cardContent:hover + .cardBg{
+    transform:skew(0);
+}
+.cardContent:hover::after, .cardContent:hover::before{
+    animation-play-state: running;
+    opacity:1;
+}
+.cardHeading{
+    color:white;
+    font-size: 3vw;
+    text-align: center;
+}
+.cardText{
+    font-size: 1.3vw;
+    color:white;
+    margin-top: 1vw;
+}
+.cardLink{
+    margin-top:auto;
+    padding:1vw 3vw;
+    text-decoration: none;
+    background-color: #fff;
+    color: black;
+    font-size: 1.2vw;
+    border-radius: 2vw;
+}
+.cardBg{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index:0;
+    top:0;
+    left:25%;
+    transform:skewX(8deg);
+    transition:all 0.5s ease-in-out;
+    background:linear-gradient(#662D8C , #ED1E79);
+    border-radius: 1vw;
+}
+@keyframes animateBlock{
+    from{
+        left:0;      
+    }
+    to{
+        left:22vw;
+    }
+}

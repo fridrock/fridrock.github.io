@@ -1,0 +1,20 @@
+header{
+    width: 90vw;
+    left: 5vw;
+    top:1vw;
+    position: fixed;
+    padding:1vw 2vw;
+    border-radius: 2vw;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(2vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+header > a{
+    color:rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 2vw;
+    margin-left: 1vw;
+}

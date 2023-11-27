@@ -1,0 +1,85 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding:7vw 2vw 10vw 2vw;
+    min-height: 100vh;
+    background-color: #3e187a !important;
+    background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%);
+}
+footer{
+    background-color: #3e187a;
+    background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%) !important;
+}
+.courseContainer{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: rgba(255,255,255,0.9);
+    border-radius: 2vw;
+    padding:2vw;
+    background-color: rgba(255,255,255,0.1);
+}
+.coursePoster{
+    width: 100%;
+    opacity: 0.8;
+    border-radius: 2vw;
+}
+.courseHeading{
+    margin-top: 2vw;
+    font-size: 3vw;
+}
+.courseDescription{
+    text-align: center;
+    padding:0 3vw 3vw 3vw;
+    margin-top: 2vw;
+    font-size: 2vw;
+}
+.listOfTopicsHeading{
+    padding:1vw;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid white;
+    font-size: 2.9vw;
+}
+.listOfTopics{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border-bottom: 1px solid white;
+}
+
+.linkToTopic{
+    margin-left: 5vw;
+    margin-bottom: 2vw;
+    position: relative;
+    font-size: 2.5vw;
+    color:rgba(255,255,255,0.8);
+}
+.linkToTopic::before{
+    content:'';
+    position: absolute;
+    top:50%;
+    margin-top: -1vw;
+    height: 2vw;
+    width: 2vw;
+    left: -2.5vw;
+    background-image: url('../img/mongologo.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.startCourse{
+    margin-top: 3vw;
+    text-decoration: none;
+    font-size: 2vw;
+    color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.3);
+    padding:1vw 4vw;
+    border-radius: 3vw;
+    backdrop-filter: blur(2vw);
+}
