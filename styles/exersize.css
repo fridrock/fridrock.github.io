@@ -113,3 +113,63 @@ main{
 .output.incorrect::after{
     background-color: rgba(255,0,0,0.1);
 }
+@media screen and (max-width:768px){
+    main{
+        padding:14vw 2vw 10vw 2vw;
+        min-height: auto;
+    }
+    .exersize{
+        width: 90%;
+        border-radius: 5vw;
+        padding:3vw;
+    }
+    .exersize > h2{
+        font-size: 7vw;
+    
+    }
+    .question{
+        margin-top: 4vw;
+        max-width: 90%;
+        font-size: 5vw;
+    }
+    .interactivePart{
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 4vw;
+    }
+    .answer{
+        width: 100%;
+        border-radius: 5vw;
+        padding:3vw;
+    }
+    .userInput::placeholder{
+        font-size: 4vw;
+    }
+    .userInput{
+        padding:3vw;
+        font-size: 4vw;
+        border-radius: 3vw;
+    }
+    .answer > button{
+        width: 100%;
+        margin-top: 3vw;
+        font-size: 5vw;
+        padding:1vw 3vw;
+        border-radius: 3vw;
+    }
+    .output{
+        margin-top: 4vw;
+        width: 100%;
+        margin-left: 0vw;
+        border-radius: 3vw;
+        padding:3vw;
+    }
+    .output > h2{
+        font-size: 7vw;
+    }
+    .result{
+        margin-top: 3vw;
+        font-size: 5vw;
+    }
+}
