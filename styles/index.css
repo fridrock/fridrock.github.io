@@ -466,7 +466,7 @@ main{
         grid-template-rows: repeat(3,1fr);
     }
     :root{
-        --cardContainerWidth:70vw;
+        --cardContainerWidth:90vw;
     }
     
     .courseHeading{
@@ -474,13 +474,13 @@ main{
     }
     .courseDescription{
         margin-top: 2vw;
-        font-size: 3.2vw;
+        font-size: 4.5vw;
         padding:0 1vw;
     } 
     .watchCourse{
         border-radius: 3vw;
         padding:1vw 0;
-        font-size: 4vw;
+        font-size: 6vw;
     }
     .cardContent::after, .cardContent::before{
         animation-name:animateBlockMobile;
@@ -495,7 +495,7 @@ main{
             left:0;      
         }
         to{
-            left:57.4vw;
+            left:74.8vw;
         }
     }
     /* REVIEW */
