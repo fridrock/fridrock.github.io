@@ -14,8 +14,14 @@ function checkAnswer(answer){
     }
     return [outputStatus, output];
 }
+function printWithEffect(output){
+    
+}
 submitExersize.addEventListener('click', (e)=>{
     e.preventDefault();
     let answerValue = userInput.value;
-    let checkResult = checkAnswer(answerValue);
+    let [status, output] = checkAnswer(answerValue);
+    if(status){
+
+    }
 })
