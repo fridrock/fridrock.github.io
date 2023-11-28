@@ -1,5 +1,77 @@
 main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding:7vw 5vw 10vw 5vw;
     min-height: 100vh;
     background-color: #3e187a;
     background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%);
+}
+h2{
+    color:white;
+    font-size: 3vw;
+}
+.reviewForm{
+    margin-top: 3vw;
+    padding:2vw;
+    border-radius: 2vw;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(2vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+label:first-child{
+    margin-top: 0;
+}
+label{
+    width: 100%;
+    margin-top: 3vw;
+    color: white;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+input{
+    background-color: transparent;
+    font-size: 1.5vw;
+    outline:none;
+    border:1px solid white;
+    border-radius: 1vw;
+    padding:0.5vw 0.5vw;
+    color: white;
+}
+textarea{
+    font-size: 1.8vw;
+    color:white;
+    background: transparent;
+    border:1px solid white;
+    border-radius: 2vw;
+    padding:2vw;    
+    margin-top: 1vw;
+    width: 100%;
+}
+textarea:focus{
+    outline:none;
+}
+textArea::placeholder{
+    font-size: 1.8vw;
+    color:rgba(255,255,255,0.5);
+}
+.reviewForm > button{
+    padding:0.5vw 2vw;
+    border-radius: 2vw;
+    border:1px solid white;
+    color:white;
+    font-size: 1.8vw;
+    margin-top: 2vw;
+    transition: all 0.5s ease;
+}
+button:hover{
+    background-color: #fff;
+    color: #3e187a;
 }

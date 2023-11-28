@@ -19,7 +19,24 @@
         <a href="./index.html#courses">Курсы</a>
         <a href="#">Задания</a>
     </header>
-    <main></main>
+    <main>
+        <h2>Форма для обратной связи</h2>
+        <form action="" class="reviewForm">
+            <label>
+                На сколько вы оцениваете информативность сайта
+                <input required type="number" min="1" max="10" placeholder="1-10">
+            </label>
+            <label>
+                На сколько вы оцениваете интерфейс сайта
+                <input required type="number" min="1" max="10" placeholder="1-10">
+            </label>
+            <label>
+                Напишите ваши пожелания разработчикам
+                <textarea required name="wish" id="" cols="30" rows="10" placeholder="Напишите пожелания"></textarea>
+            </label>
+            <button type="submit">Отправить отзыв</button>
+        </form>
+    </main>
     <footer>
         @Copyright Фридрих Александр ИКБО-20-22
     </footer>
