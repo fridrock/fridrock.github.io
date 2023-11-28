@@ -1,6 +1,10 @@
 header{
     position: absolute !important;
 }
+footer{
+    background-color: #3e187a !important;
+    background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%) !important;
+}
 aside{
     height: 30vw;
     width: 18vw;
@@ -34,7 +38,8 @@ main{
     align-items: end;
     padding:7vw 4.5vw 5vw 2vw;
     min-height: 100vh;
-    background: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
+    background-color: #3e187a !important;
+    background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%);
 }
 .articleContainer{
     display: flex;
