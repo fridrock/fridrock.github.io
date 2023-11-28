@@ -79,3 +79,47 @@ main{
     border-radius: 3vw;
     backdrop-filter: blur(2vw);
 }
+@media screen and (max-width:768px){
+    main{
+        padding:16vw 2vw 10vw 2vw;
+    }
+    .courseContainer{
+        width: 95%;
+        border-radius: 5vw;
+        padding:3vw 3vw 7vw 3vw;
+    }
+    .coursePoster{
+        border-radius: 3.5vw;
+    }
+    .courseHeading{
+        margin-top: 4vw;
+        font-size: 7vw;
+    }
+    .courseDescription{
+        margin-top: 4vw;
+        font-size: 4vw;
+    }
+    .listOfTopicsHeading{
+        font-size: 7vw;
+    }
+    
+    .linkToTopic{
+        margin-left: 6vw;
+        margin-bottom: 4vw;
+        font-size:5vw;
+    }
+    .linkToTopic::before{
+        margin-top: -2vw;
+        height: 5vw;
+        width: 5vw;
+        left: -5vw;
+    }
+    .startCourse{
+        margin-top: 6vw;
+        font-size: 7vw;
+        padding:1vw 4vw;
+        border-radius: 6vw;
+        width: 100%;
+        text-align: center;
+    }
+}
