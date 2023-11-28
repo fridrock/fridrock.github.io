@@ -80,7 +80,7 @@ button:hover{
 }
 @media screen and (max-width:768px){
     main{
-        padding:14vw 5vw 10vw 5vw;
+        padding:20vw 5vw 15vw 5vw;
         min-height: auto;
     }
     h2{
