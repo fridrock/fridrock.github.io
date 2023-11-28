@@ -115,7 +115,7 @@ main{
 }
 @media screen and (max-width:768px){
     main{
-        padding:14vw 2vw 10vw 2vw;
+        padding:20vw 2vw 15vw 2vw;
         min-height: auto;
     }
     .exersize{
