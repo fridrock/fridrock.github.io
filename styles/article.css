@@ -2,7 +2,7 @@ header{
     position: absolute !important;
 }
 aside{
-    height: 30vw;
+    height: auto;
     width: 18vw;
     position: fixed;
     left: 5vw;
@@ -89,5 +89,59 @@ main{
     }
     to{
         left: 110%;
+    }
+}
+@media screen and (max-width:768px){
+    aside{
+        width: 90vw;
+        position: relative;
+        left: 0vw;
+        top:0vw;
+        padding:3vw;
+        border-radius: 5vw;
+        background-color: rgba(255,255,255,0.2);
+    }
+    aside > h2{
+        font-size: 7vw;
+    }
+    aside > ul {
+        margin-top: 1.5vw;
+    }
+    aside > ul > li{
+        margin-left: 2vw;
+        margin-top: 3vw;
+    }
+    aside > ul > li > a{
+        font-size: 4vw;
+    }
+    main{
+        align-items: center;
+        padding:14vw 2vw 5vw 2vw;
+    }
+    .articleContainer{
+        margin-top: 4vw;
+        width:90vw;
+        background-color: rgba(255,255,255,0.2);
+        padding:3vw;
+        border-radius: 5vw;
+    }
+    .articleContainer > h1{
+        font-size: 7vw;
+    }
+    .articleContainer > h2{
+        margin-top: 4vw;
+        font-size: 5vw;
+    }
+    .articleContainer > p{
+        margin-top: 4vw;
+        font-size: 4vw;
+    }
+    .doExercise{
+        width: 100%;
+        margin-top: 4vw;
+        border-radius: 4vw;
+        padding:1vw 3vw;
+        text-align: center;
+        font-size: 6vw;
     }
 }
