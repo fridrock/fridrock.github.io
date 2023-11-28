@@ -3,7 +3,7 @@ const outputContainer = document.querySelector('.output')
 const submitExersize = document.querySelector('.answer > button');
 const result = outputContainer.querySelector('.result');
 function checkAnswer(answer){
-    const correctResult = `db.insert({name:"Aleks", surname:"Fridrikh"});`;
+    const correctResult = `db.insert({name:"Aleks",surname:"Fridrikh"});`;
     //const correctResult = 'j';
     let output = ""
     let outputStatus = 0;
@@ -31,7 +31,8 @@ submitExersize.addEventListener('click', (e)=>{
     result.innerHTML = "";
     result.classList.remove('incorrect');
     result.classList.remove('correct');
-    let answerValue = userInput.value;
+    //Приводит ввод с табуляцией пробелами и переносами строки к общему виду
+    let answerValue = (userInput.value).split(" ").join("").split("\n").join("");
     let [status, output] = checkAnswer(answerValue);
     if(status){
         outputContainer.classList.add('correct');
