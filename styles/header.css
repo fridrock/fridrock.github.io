@@ -18,3 +18,13 @@ header > a{
     font-size: 2vw;
     margin-left: 1vw;
 }
+@media screen and (max-width:768px){
+    header{
+        padding:3vw 1vw;
+        border-radius: 5vw;
+    }
+    header > a{
+        font-size: 4vw;
+        margin-left: 2vw;
+    }
+}
