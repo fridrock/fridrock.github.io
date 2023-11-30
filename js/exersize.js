@@ -29,8 +29,8 @@ function printWithEffect(output, currentIndex=0){
 submitExersize.addEventListener('click', (e)=>{
     e.preventDefault();
     result.innerHTML = "";
-    result.classList.remove('incorrect');
-    result.classList.remove('correct');
+    outputContainer.classList.remove('incorrect');
+    outputContainer.classList.remove('correct');
     //Приводит ввод с табуляцией пробелами и переносами строки к общему виду
     let answerValue = (userInput.value).split(" ").join("").split("\n").join("");
     let [status, output] = checkAnswer(answerValue);
