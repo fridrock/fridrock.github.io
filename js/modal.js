@@ -1,16 +1,16 @@
-const universityReview = document.querySelector(".universityReview");
+const videoReview = document.querySelector(".videoReview");
 const html = document.querySelector('html');
 
 const watchReview = document.querySelector('.watchReview');
-const iframe = universityReview.querySelector('iframe');
+const iframe = videoReview.querySelector('iframe');
 watchReview.addEventListener('click',()=>{
-    universityReview.classList.remove('closed');
+    videoReview.classList.remove('closed');
     html.classList.add('scrollDisabled')
 });
-universityReview.addEventListener('click',(e)=>{
+videoReview.addEventListener('click',(e)=>{
     if(e.target!=iframe){
         html.classList.remove('scrollDisabled');
-        universityReview.classList.add('closed');
+        videoReview.classList.add('closed');
     }
 })
 

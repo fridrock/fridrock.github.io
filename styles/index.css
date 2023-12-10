@@ -89,7 +89,7 @@ main{
 }
 
 /* ABOUT UNIVERSITY */
-.aboutUniversity{
+.entryBlock{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -103,10 +103,10 @@ main{
     color:rgba(255,255,255,0.8);
     padding:2vw 2vw 7vw 2vw;
 }
-.universityReview.closed{
+.videoReview.closed{
     display: none;
 }
-.universityReview{
+.videoReview{
     cursor: pointer;
     z-index: 3;
     position: fixed;
@@ -119,22 +119,22 @@ main{
     justify-content: center;
     align-items: center;
 }
-.universityReview iframe{
+.videoReview iframe{
     width: 70vw;
     height: 40vw;
 }
-.aboutUniversity > h2{
+.entryBlock > h2{
     text-shadow: #FC0 1px 0 10px;
     font-size: 3vw;
 }
-.aboutUniversity > p{
+.entryBlock > p{
     margin-top: 3vw;
     max-width: 60vw;
     text-align: center;
     font-size: 2.5vw;
     text-shadow: #FC0 1px 0 10px;
 }
-.universityContent{
+.entryContent{
     width: 90vw;
     background-color: rgba(255,255,255,0.3);
     backdrop-filter:blur(2vw);
@@ -145,7 +145,7 @@ main{
     justify-content: space-between;
     align-items: start;
 }
-.universityPicture{
+.nosqlPicture{
     border-radius: 2vw;
     opacity: 0.7;
     width: 50%;
@@ -154,7 +154,7 @@ main{
     width: 50%;
     margin-left: 1vw;
 }
-.universityDescription{
+.entryDescription{
     font-size: 2vw;
 }
 .watchReview{
@@ -163,7 +163,7 @@ main{
     padding:0.5vw 4vw;
     border-radius: 2vw;
     font-size: 2.5vw;
-    margin-top: 3vw;
+    margin-top: 2vw;
 }
 
 /* COURSES */
@@ -406,29 +406,25 @@ main{
     }
     
     /* ABOUT UNIVERSITY */
-    .aboutUniversity{
+    .entryBlock{
         border-top-left-radius: 3vw;
         border-top-right-radius:3vw;
         padding:4vw 2vw 10vw 2vw;
         background-size: cover;
     }
-    .universityReview iframe{
+    .videoReview iframe{
         width: 90vw;
         height: 50vw;
     }
-    .aboutUniversity > h2{
+    .entryBlock > h2{
         font-size: 7vw;
     }
-    .aboutUniversity > p{
-        max-width: 80vw;
-        font-size: 5vw;
-    }
-    .universityContent{
+    .entryContent{
         flex-direction: column;
         justify-content: start;
         align-items: center;
     }
-    .universityPicture{
+    .nosqlPicture{
         width: 100%;
     }
     .rightSide{
@@ -440,7 +436,7 @@ main{
         justify-content: start;
         align-items: center;
     }
-    .universityDescription{
+    .entryDescription{
         font-size: 4vw;
     }
     .watchReview{
