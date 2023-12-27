@@ -368,9 +368,10 @@ main{
         font-size: 5vw;
     }
     .login{
+        width: max-content;
         padding:1.5vw 4vw;
         border-radius: 4vw;
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
     
     /* GOAL */
